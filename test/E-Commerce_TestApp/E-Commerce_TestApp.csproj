@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>E_Commerce_TestApp</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Infrastructure\E-Commerce.Application\E-Commerce.Application.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\E-Commerce.Domain\E-Commerce.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\E-Commerce.Infrastructure\E-Commerce.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

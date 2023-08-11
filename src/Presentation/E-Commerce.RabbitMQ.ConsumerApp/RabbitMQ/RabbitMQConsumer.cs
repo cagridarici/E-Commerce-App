@@ -62,7 +62,6 @@ namespace E_Commerce.RabbitMQ.ConsumerApp.RabbitMQ
 
         private async void Consumer_Received(object sender, BasicDeliverEventArgs eventArgs)
         {
-
             MailModel mailModel = ObjectConverter.JsonToObject<MailModel>(Encoding.UTF8.GetString(eventArgs.Body.ToArray()));
             MessageReceived.Invoke(this, mailModel);
 
@@ -101,8 +100,7 @@ namespace E_Commerce.RabbitMQ.ConsumerApp.RabbitMQ
             }
             catch (BrokerUnreachableException)
             {
-                // Consumer kapsamında Log islemleri vs.
-                Thread.Sleep(10000);
+                Thread.Sleep(10000); // Hata olursa 10 saniye sonra tekrar connection kur...
                 return GetConnection();
             }
         }

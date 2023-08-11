@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Domain.Entities
 {
-    /// <summary>
-    /// Represent to Product Category Entity Model.
-    /// </summary>
     [Table("ProductCategories")]
     public class ProductCategory : EntityBase
     {

@@ -2,9 +2,6 @@
 
 namespace E_Commerce.Domain.Entities
 {
-    /// <summary>
-    /// Represent to Customer Entity Model.
-    /// </summary>
     [Table("Customers")]
     public class Customer : EntityBase
     {

@@ -10,14 +10,13 @@ namespace E_Commerce.Application
 {
     public class InvoiceAppService : CrudAppServiceBase<Invoice>
     {
-        private ApplicationRepository<Invoice> _InvoiceRepository = null;
+        private ApplicationRepository<Invoice> _InvoiceRepository;
 
         public InvoiceAppService(ApplicationRepository<Invoice> invoiceRepository) : base(invoiceRepository)
         {
             _InvoiceRepository = invoiceRepository;
         }
 
-        public int Aynimi { get; set; }
 
         //// Custom Service Operations Here...
     

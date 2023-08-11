@@ -13,9 +13,9 @@ namespace E_Commerce.Application
 {
     public class OrderAppService : CrudAppServiceBase<Order>
     {
-        private ApplicationRepository<Order> _OrderRepository = null;
-        private ApplicationRepository<Customer> _CustomerRepository = null;
-        private ApplicationRepository<Product> _ProdudctRepository = null;
+        private ApplicationRepository<Order> _OrderRepository;
+        private ApplicationRepository<Customer> _CustomerRepository;
+        private ApplicationRepository<Product> _ProdudctRepository;
 
         public OrderAppService(
             ApplicationRepository<Order> orderRepository,

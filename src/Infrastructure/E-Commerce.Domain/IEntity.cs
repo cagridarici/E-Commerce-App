@@ -11,10 +11,6 @@ namespace E_Commerce.Domain
 
     }
 
-    /// <summary>
-    /// Can be used in cases where the id type must be different
-    /// </summary>
-    /// <typeparam name="T"> Generic Id Type </typeparam>
     public interface IEntity<T> : IEntity
     {
 

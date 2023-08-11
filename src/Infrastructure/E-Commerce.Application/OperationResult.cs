@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Application
 {
+    /// <summary>
+    /// Servis Tarafinda Yapilan Operasyonların Hatalı veya Başarılı İşlemlerini İşlemek İcin Kullanılmaktadır...
+    /// </summary>
     public class OperationResult
     {
         public OperationResult()

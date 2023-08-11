@@ -9,10 +9,14 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Application
 {
+    /// <summary>
+    /// Entity Servisleri İçin Temel Crud Operasyonlarını İçermektedir...
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public abstract class CrudAppServiceBase <TEntity> : IApplicationService, IDisposable
         where TEntity: class, IEntity, new()
     {
-        private ApplicationRepository<TEntity> _Repository = null; 
+        private ApplicationRepository<TEntity> _Repository; 
 
         public CrudAppServiceBase(ApplicationRepository<TEntity> applicationRepository)
         {
@@ -116,7 +120,6 @@ namespace E_Commerce.Application
             }
             return result;
         }
-
 
         public async Task<OperationResult> UpdateItem(TEntity entity)
         {

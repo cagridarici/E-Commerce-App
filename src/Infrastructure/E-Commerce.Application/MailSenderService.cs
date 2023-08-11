@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace E_Commerce.Application
 {
     /// <summary>
-    /// RabbitMQ Operasyonlarini Yurutecek Mail Servisi...
+    /// RabbitMQ Servisiyle İletisime Gecerek Mail İslemlerini Gerceklestirecek Class
     /// </summary>
     public class MailSenderService : IApplicationService
     {
@@ -25,8 +25,5 @@ namespace E_Commerce.Application
         {
             _RabbitMQMailSenderService.SendQueue(mailModel);
         }
-
     }
-
-
 }

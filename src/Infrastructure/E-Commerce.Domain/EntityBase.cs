@@ -3,9 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E_Commerce.Domain
 {
-    /// <summary>
-    /// Represent to provide a base for entities
-    /// </summary>
     [Serializable]
     public abstract class EntityBase : IEntity
     {
@@ -21,9 +18,9 @@ namespace E_Commerce.Domain
     }
 
     /// <summary>
-    /// Can be used in cases where the id type must be different
+    /// int disinda farkli veri tipinde Id tanimi yapilacaksa base alinabilir
     /// </summary>
-    /// <typeparam name="T"> Generic Id Type (Guid,Long vs.) </typeparam>
+    /// <typeparam name="T"></typeparam>
     [Serializable]
     public abstract class EntityBase<T> : IEntity<T>
     {

@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Domain.Entities
 {
-    /// <summary>
-    /// Represent to Orders Entity Model.
-    /// </summary>
     [Table("Orders")]
     public class Order : EntityBase
     {

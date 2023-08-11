@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 
 namespace E_Commerce.Domain.Entities
 {
-    /// <summary>
-    /// Represent to Customer Addresses Entity Model.
-    /// </summary>
     [Table("CustomerAddresses")]
     public class CustomerAddress : EntityBase
     {

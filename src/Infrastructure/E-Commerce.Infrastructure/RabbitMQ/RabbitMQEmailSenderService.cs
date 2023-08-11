@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace E_Commerce.Infrastructure.RabbitMQ
 {
     /// <summary>
-    /// RabbitMQ Producer 
+    /// RabbitMQ Producer İslerini Yürütecek Class...
     /// </summary>
     public class RabbitMQMailSenderService : IDisposable
     {

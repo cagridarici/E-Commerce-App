@@ -49,7 +49,6 @@ namespace E_Commerce.RabbitMQ.ConsumerApp
             MailMessage mailMessage = new MailMessage();
             mailMessage.Subject = model.Subject;
             mailMessage.Body = model.Body;
-            mailMessage.From = new MailAddress(model.From);
             mailMessage.To.Add(model.To);
             mailMessage.From = new MailAddress(SMTPConfiguration.User);
             return mailMessage;

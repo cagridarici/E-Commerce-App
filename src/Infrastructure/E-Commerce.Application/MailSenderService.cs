@@ -21,7 +21,7 @@ namespace E_Commerce.Application
             _RabbitMQMailSenderService = mailSenderService;
         }
 
-        public void SendMailToQueue(MailModel mailModel)
+        public void SendMailToRabbitMQ(MailModel mailModel)
         {
             _RabbitMQMailSenderService.SendQueue(mailModel);
         }

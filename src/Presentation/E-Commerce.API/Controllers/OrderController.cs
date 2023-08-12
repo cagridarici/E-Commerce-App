@@ -24,8 +24,8 @@ namespace E_Commerce.API.Controllers
         }
 
         /// <summary>
-        /// Siparis Olusturma Mail Gonderim İslemlerinin Buradaki Fatura Hazirlama vs. Surecleri Etkilememesi icin Yani Asenkron Calismasi İcin
-        /// Queue Yapisi Olarak RabbitMQ Kullanildi RabbitMQ bir background service olarak Mail Gonderme İslerini Kendisi Yürütmektedir...
+        /// Siparis Olusturma Post Method 
+        /// Mail gonderim islemleri RabbitMQ tarafindan asenkron bir sekilde Console uygulamasi uzerinden islenmektedir. 
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>
@@ -74,8 +74,7 @@ namespace E_Commerce.API.Controllers
 
 
                 // Mail nesnesini Servis Metodu aracılığıyla RabbitMQ'ya iletiyoruz...
-                // Sonrasinda Consumerda Alip Mail Gonderme İslemlerini Gerceklestiriyoruz...
-                _MailSenderService.SendMailToQueue(mailModel);
+                _MailSenderService.SendMailToRabbitMQ(mailModel);
 
 
                 // Fatura Olusturuluyor... 

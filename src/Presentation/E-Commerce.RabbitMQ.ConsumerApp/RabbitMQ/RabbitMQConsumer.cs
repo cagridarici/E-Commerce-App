@@ -82,7 +82,7 @@ namespace E_Commerce.RabbitMQ.ConsumerApp.RabbitMQ
             _RabbitMQConnection.Dispose();
         }
 
-        public IConnection GetConnection()
+        private IConnection GetConnection()
         {
             try
             {

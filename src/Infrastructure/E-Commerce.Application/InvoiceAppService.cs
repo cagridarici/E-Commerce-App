@@ -15,10 +15,6 @@ namespace E_Commerce.Application
         public InvoiceAppService(ApplicationRepository<Invoice> invoiceRepository) : base(invoiceRepository)
         {
             _InvoiceRepository = invoiceRepository;
-        }
-
-
-        //// Custom Service Operations Here...
-    
+        }    
     }
 }

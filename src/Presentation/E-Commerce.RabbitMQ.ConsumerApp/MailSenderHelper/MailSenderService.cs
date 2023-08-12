@@ -17,7 +17,7 @@ namespace E_Commerce.RabbitMQ.ConsumerApp
             MailOperationResult operationResult = new MailOperationResult();
             MailMessage mailMessage = CreateMailMessage(mailModel);
 
-            // Uygulamanin Simule Edilebilmesi İcin Mail Gonderilmis Gibi Davrandiriyoruz...
+            // Uygulamanin Simule Edilebilmesi İcin bool degerine gore mail gonderilmis gibi davrandiriyoruz.
             // İstege Bagli Olarak SMTPConfiguration class'ındaki SMTP bilgileri doldurularak Gercek Mail Gonderimi Saglanabilir...
             if (!SendRealMail)
             {

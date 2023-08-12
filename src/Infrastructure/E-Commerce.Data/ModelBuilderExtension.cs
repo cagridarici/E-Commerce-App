@@ -20,6 +20,14 @@ namespace E_Commerce.Data
                     LastName = "darici",
                     EmailAddress = "cagridarici34@icloud.com",
                     Status = (short)Status.Active
+                },
+                new Customer
+                {
+                    Id = 2,
+                    FirstName = "Murat",
+                    LastName = "Can",
+                    EmailAddress = "fakemail@gmail.com",
+                    Status = (short)Status.Active
                 }
             );
 
@@ -30,6 +38,15 @@ namespace E_Commerce.Data
                     CustomerId = 1,
                     AddressLine1 = "0975 Camron Turnpike / Haleighberg 52505",
                     PostalCode = "52505",
+                    City = "Haleighberg",
+                    Country = "Germany"
+                },
+                new CustomerAddress
+                {
+                    Id = 2,
+                    CustomerId = 2,
+                    AddressLine1 = "0972 Camron Turnpike / Haleighberg 52504",
+                    PostalCode = "52504",
                     City = "Haleighberg",
                     Country = "Germany"
                 }

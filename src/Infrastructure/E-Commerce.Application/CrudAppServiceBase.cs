@@ -23,7 +23,7 @@ namespace E_Commerce.Application
             _Repository = applicationRepository;
         }
 
-        public async Task<OperationResult<List<TEntity>>> GetItems()
+        public virtual async Task<OperationResult<List<TEntity>>> GetItems()
         {
             var result = new OperationResult<List<TEntity>>();
             try
@@ -37,7 +37,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public OperationResult<IQueryable<TEntity>> GetItemsQueryable()
+        public virtual OperationResult<IQueryable<TEntity>> GetItemsQueryable()
         {
             var result = new OperationResult<IQueryable<TEntity>>();
             try
@@ -51,7 +51,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult> DeleteItem(TEntity entity)
+        public virtual async Task<OperationResult> DeleteItem(TEntity entity)
         {
             var result = new OperationResult();
             try
@@ -65,7 +65,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult> DeleteItem(int id)
+        public virtual async Task<OperationResult> DeleteItem(int id)
         {
             var result = new OperationResult();
             try
@@ -79,7 +79,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult<int>> GetCount()
+        public virtual async Task<OperationResult<int>> GetCount()
         {
             var result = new OperationResult<int>();
             try
@@ -93,7 +93,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult<TEntity>> GetItem(int id)
+        public virtual async Task<OperationResult<TEntity>> GetItem(int id)
         {
             var result = new OperationResult<TEntity>();
             try
@@ -107,7 +107,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult> InsertItem(TEntity entity)
+        public virtual async Task<OperationResult> InsertItem(TEntity entity)
         {
             var result = new OperationResult();
             try
@@ -121,7 +121,7 @@ namespace E_Commerce.Application
             return result;
         }
 
-        public async Task<OperationResult> UpdateItem(TEntity entity)
+        public virtual async Task<OperationResult> UpdateItem(TEntity entity)
         {
             var result = new OperationResult();
             try

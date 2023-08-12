@@ -12,9 +12,7 @@ RabbitMQConsumer consumer = new RabbitMQConsumer();
 consumer.MessageReceived += Consumer_MessageReceived;
 consumer.MailSended += Consumer_MailSended;
 
-
 consumer.Start();
-
 
 void Consumer_MessageReceived(object sender, MailModel e)
 {

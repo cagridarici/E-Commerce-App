@@ -23,13 +23,13 @@ builder.Services.AddScoped(typeof(ApplicationRepository<Product>));
 builder.Services.AddScoped(typeof(ApplicationRepository<ProductCategory>));
 builder.Services.AddScoped(typeof(ApplicationRepository<Invoice>));
 
+// Configure Scoped Application Services
 builder.Services.AddScoped(typeof(OrderAppService));
 builder.Services.AddScoped(typeof(InvoiceAppService));
 builder.Services.AddScoped(typeof(MailSenderService));
 
-// Her Request basina Ayri RabbitMQ Connection Acmasin Diye Singleton Tanimladim. 
+// Configure Singleton Helper Services
 builder.Services.AddSingleton(typeof(RabbitMQMailSenderService));
-
 
 var app = builder.Build();
 

@@ -8,6 +8,6 @@ namespace E_Commerce.Data
 {
     public class Consts
     {
-        public const string CONNECTION_STRING = "Data Source=CAGRI\\SQLEXPRESS;TrustServerCertificate=True;Initial Catalog=ECommerce;Integrated Security=True";
+        public const string CONNECTION_STRING = "Data Source=CAGRI\\SQLEXPRESS;TrustServerCertificate=True;Initial Catalog=ECommerceDB;Integrated Security=True";
     }
 }

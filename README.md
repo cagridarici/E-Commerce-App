@@ -12,4 +12,4 @@ Projeyi Sorunsuz Çalıştırabilmek İçin Notlar : <br>
 <b>5-)</b> Swagger üzerinden sipariş oluştururken için Api/Order metoduna parametre olarak "customer_id" ve "product_id" değerlerini 1 girebilirsiniz. Db oluşturulurken 1 Id'li kayıt atmaktadır. <br>
 <b>6-)</b> Presentation > E-Commerce.API ve E-Commerce.RabbitMQ.ConsumerApp projelerini multiple olarak çalıştırarak görseldeki gibi monitor edebilirsiniz.
 
-![alt text](https://i.ibb.co/7KZQk1k/Proje-Resmi.png)
+![alt text](https://i.ibb.co/jyJyd79/Screenshot-1.png)

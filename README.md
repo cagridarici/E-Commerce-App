@@ -1,6 +1,6 @@
 # E-Commerce 
 
-Mail gönderim işlemlerinin asenkron olarak RabbitMQ tarafından yürütüldüğü , DDD prensiplerine göre kurgulanmış API uygulamasıdır. <br>
+Mail gönderim işlemlerinin asenkron olarak RabbitMQ tarafından yürütüldüğü API uygulamasıdır. <br>
 API UI olarak Swagger kullanılmaktadır. 
 
 Projeyi Sorunsuz Çalıştırabilmek İçin Notlar : <br>
